@@ -1,10 +1,13 @@
 import { handleGrowthAPI } from "../server/growth-api.js";
+import { handleCoachAPI } from "../server/coach-api.js";
 import handler from "vinext/server/fetch-handler";
 import { runWithConnectorBinding } from "../lib/connector-context";
 import type { ConnectorBinding } from "../lib/connector-contract.mjs";
 
 export default {
   async fetch(request: Request, env: Cloudflare.Env, ctx: ExecutionContext<{ CONNECTORS?: ConnectorBinding }>) {
+    const coachResponse = await handleCoachAPI(request, env);
+    if (coachResponse) return coachResponse;
     const growthResponse = await handleGrowthAPI(request, env);
     if (growthResponse) return growthResponse;
     let binding = ctx.props?.CONNECTORS;
