@@ -1,0 +1,87 @@
+.coach-page { --coach-soft:#edf7ef; }
+.coach-page .page-head .eyebrow { display:block; margin-bottom:12px; }
+.coach-page .page-head h1 { font-size:30px; }
+.coach-stepper { display:flex; gap:22px; padding:18px 22px; margin:0 0 24px; background:#f2f8f1; border:1px solid #dfece0; border-radius:18px; color:#72877a; }
+.coach-stepper span { display:flex; gap:9px; align-items:center; font-size:12px; }
+.coach-stepper b { display:grid; place-items:center; width:26px; height:26px; border-radius:50%; background:#e0ebe0; font-size:12px; }
+.coach-stepper .active { color:#226d5c; font-weight:600; }
+.coach-stepper .active b { color:white; background:#4c9e81; }
+.coach-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:22px; align-items:start; }
+.coach-input, .coach-output { min-width:0; padding:25px; }
+.coach-output { background:linear-gradient(155deg,#fffefa,#f5faf4); min-height:480px; }
+.coach-input h2, .coach-response h2 { font-size:19px; }
+.coach-examples { display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin-bottom:18px; }
+.coach-examples button { border:1px solid #dce9df; background:#f7fbf5; padding:6px 9px; border-radius:20px; color:#457b67; font-size:11px; }
+.coach-examples button:hover { background:#e5f3e8; }
+.coach-upload { display:block; position:relative; text-align:center; border:1px dashed #9bc8ae; border-radius:14px; padding:18px 12px; background:#f3faf4; cursor:pointer; }
+.coach-upload span { display:block; font-size:13px; color:#367d65; font-weight:600; }
+.coach-upload small { display:block; font-size:10px; color:#769080; margin-top:5px; }
+.coach-upload input { position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer; }
+.coach-upload:focus-within { outline:3px solid #4cab9c; outline-offset:3px; }
+.coach-image-preview { display:flex; align-items:center; gap:12px; margin-top:12px; padding:12px; border-radius:14px; background:#f8faf7; }
+.coach-image-preview img { width:90px; max-height:110px; object-fit:contain; border-radius:8px; background:white; }
+.coach-image-preview>div { min-width:0; }
+.coach-image-preview strong { display:block; overflow-wrap:anywhere; font-size:12px; }
+.coach-image-preview .btn { margin:7px 4px 0 0; }
+.coach-field { display:block; margin-top:19px; font-size:13px; font-weight:600; color:#365e4e; }
+.coach-field small { display:block; font-size:10px; color:#819789; font-weight:400; margin-top:4px; }
+.coach-field textarea { display:block; width:100%; min-height:120px; margin-top:9px; padding:12px 13px; border:1px solid #d6e6d8; border-radius:12px; background:#fffefa; font-size:13px; color:#294f40; line-height:1.8; resize:vertical; font-weight:400; }
+.coach-field #coach-attempt { min-height:95px; }
+.coach-model { margin-top:18px; padding:15px; border:1px solid #dfebdf; border-radius:15px; background:#f7faf4; }
+.coach-check { display:flex; gap:9px; align-items:flex-start; font-size:12px; color:#55735f; line-height:1.6; cursor:pointer; }
+.coach-check input { margin:3px 0 0; width:15px; height:15px; flex:0 0 15px; accent-color:#288d74; }
+.coach-selects { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:15px 0 12px; }
+.coach-selects label { display:block; min-width:0; font-size:11px; color:#5f7f6a; }
+.coach-selects label:first-child { grid-column:1/-1; }
+.coach-selects select { display:block; width:100%; max-width:100%; margin-top:5px; background:white; border:1px solid #d7e6d7; border-radius:9px; padding:9px 10px; color:#285946; font-size:12px; }
+.coach-confirm { margin:19px 0 14px; }
+.coach-submit { display:flex; flex-wrap:wrap; gap:9px; }
+.coach-submit>.btn:first-child { flex:1; }
+.coach-error { color:#a45741!important; font-size:12px!important; margin:12px 0!important; overflow-wrap:anywhere; }
+.coach-empty { text-align:center; padding:26px 3px; }
+.coach-sprout { width:90px; height:90px; margin:0 auto 24px; display:grid; place-items:center; font-size:58px; color:#72aa86; background:radial-gradient(circle at 30% 20%,#fff4d5,#e4f0d9); border:7px solid #eff7e9; border-radius:35px; transform:rotate(-8deg); }
+.coach-empty h2 { margin:14px 0 10px; font-size:21px; }
+.coach-empty p { font-size:12px; line-height:1.9; }
+.coach-empty ol { list-style:none; display:grid; gap:12px; padding:0; margin:30px 0 0; text-align:left; }
+.coach-empty li { display:flex; align-items:center; gap:13px; font-size:12px; padding:12px; background:#ffffffc9; border:1px solid #e4eee0; border-radius:12px; }
+.coach-empty li b { font-family:Georgia,serif; font-size:20px; color:#9bbb9c; }
+.coach-source { font-size:10px; font-weight:650; padding:6px 9px; border-radius:20px; background:#deefe1; color:#397b58; }
+.coach-source.rules { background:#f6ead3; color:#987039; }
+.coach-response h2 { margin:15px 0 10px; }
+.coach-summary { white-space:pre-wrap; overflow-wrap:anywhere; }
+.coach-hint { background:white; border:1px solid #d5e8d7; border-left:4px solid #78b295; border-radius:13px; padding:18px; margin:19px 0 14px; font-size:14px; line-height:1.9; white-space:pre-wrap; overflow-wrap:anywhere; }
+.coach-question { color:#2e8062!important; font-weight:600; margin-bottom:14px; white-space:pre-wrap; }
+.coach-notice { padding:12px 14px; background:#fff5e3; color:#896e40!important; border:1px solid #ebd9b7; border-radius:12px; font-size:12px; line-height:1.8; margin:12px 0; }
+.coach-notice ul { margin:5px 0; padding-left:18px; }
+.coach-sources { margin-top:24px; padding-top:18px; border-top:1px solid #dde9db; }
+.coach-sources h3 { font-size:13px; margin-bottom:12px; }
+.coach-sources details { border:1px solid #e1ecdc; border-radius:10px; background:#fffefb; margin-top:8px; padding:11px 12px; }
+.coach-sources summary, .coach-trace summary, .coach-calculation summary { cursor:pointer; color:#41745a; font-size:12px; line-height:1.7; }
+.coach-sources p, .coach-calculation p { margin:10px 0; font-size:12px; line-height:1.85; }
+.coach-trace { margin-top:18px; border-top:1px solid #dce8d8; padding-top:13px; }
+.coach-trace ol { padding:0; list-style:none; }
+.coach-trace li { border-left:2px solid #aacbb1; padding:4px 12px 10px; margin-top:8px; font-size:11px; }
+.coach-trace li span { display:block; color:#789180; margin-top:5px; }
+.coach-calculation { background:#edf6ea; border-radius:13px; padding:14px; margin-top:19px; }
+.coach-cross-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:5px; }
+.coach-cross-grid>div { text-align:center; padding:8px 3px; border:1px solid #dae6d5; border-radius:8px; background:white; min-width:0; }
+.coach-cross-grid>div.match { background:#d7edda; border-color:#83b694; }
+.coach-cross-grid small, .coach-cross-grid span { display:block; font-size:9px; color:#729079; overflow-wrap:anywhere; }
+.coach-cross-grid strong { display:block; font-size:12px; margin:5px 0; overflow-wrap:anywhere; }
+.coach-practice { margin-top:22px; }
+.coach-practice .options { display:grid; grid-template-columns:1fr 1fr; margin:18px 0; }
+.coach-practice .coach-check { margin:14px 0; }
+.coach-grade { border-radius:13px; padding:18px; background:#edf7eb; font-size:13px; line-height:1.9; }
+.coach-grade.retry { background:#fff2e4; }
+.coach-grade ol { padding-left:20px; }
+.coach-review-bar { display:flex; flex-wrap:wrap; gap:10px; align-items:center; border:1px solid #e4ead5; background:#faf9ec; border-radius:15px; padding:14px 18px; margin-bottom:20px; }
+.coach-review-bar>div { flex:1; min-width:180px; }
+.coach-review-bar strong { display:block; font-size:13px; color:#667a48; }
+.coach-review-bar small { display:block; margin-top:4px; color:#8c9475; font-size:10px; }
+.coach-busy { display:flex; align-items:center; gap:10px; padding:12px; border-radius:10px; background:#e7f3e9; color:#467c60; font-size:12px; margin-bottom:14px; }
+.coach-busy>span { height:12px; width:12px; border:2px solid #a8cfb5; border-top-color:#277d5f; border-radius:50%; animation:coach-spin 1s linear infinite; }
+.coach-home-call { background:linear-gradient(110deg,#e5f4ec,#f6f1dc)!important; }
+@keyframes coach-spin { to { transform:rotate(360deg); } }
+@media(max-width:1100px) { .coach-layout { grid-template-columns:1fr; } .coach-output { min-height:0; } .coach-empty { padding:15px; } }
+@media(max-width:600px) { .coach-page .page-head { flex-wrap:wrap; } .coach-page .page-head h1 { font-size:25px; } .coach-input,.coach-output { padding:18px; } .coach-stepper { gap:12px; padding:13px 11px; } .coach-stepper span { gap:5px; font-size:10px; } .coach-stepper b { width:21px; height:21px; } .coach-cross-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .coach-practice .section-head { flex-wrap:wrap; gap:10px; } .coach-practice .options { grid-template-columns:1fr; } .coach-image-preview img { width:68px; } }
+@media(prefers-reduced-motion:reduce) { .coach-busy>span { animation:none; } }
