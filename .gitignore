@@ -47,3 +47,6 @@ next-env.d.ts
 
 *.tar.gz
 *.log
+
+# Generated from frontend/coach during dev, test and build.
+/public/coach/
